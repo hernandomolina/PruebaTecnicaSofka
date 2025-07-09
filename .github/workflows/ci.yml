@@ -22,14 +22,14 @@ jobs:
         cache: maven
         
     - name: Cache Maven packages
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ~/.m2
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2
         
     - name: Cache Serenity reports
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: target/site/serenity
         key: ${{ runner.os }}-serenity-${{ github.sha }}
