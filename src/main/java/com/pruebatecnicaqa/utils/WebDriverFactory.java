@@ -26,7 +26,9 @@ public class WebDriverFactory {
         options.addArguments("--password-store=basic");
         options.addArguments("--no-default-browser-check");
         options.addArguments("--incognito");
-        options.addArguments("--user-data-dir=/tmp/chrome-test-profile");
+
+        // Ruta de perfil de usuario única para evitar conflicto
+        options.addArguments("--user-data-dir=/tmp/chrome-profile-" + System.currentTimeMillis());
         
         // Configuraciones específicas para evitar diálogos de seguridad
         options.addArguments("--safebrowsing-disable-download-protection");
