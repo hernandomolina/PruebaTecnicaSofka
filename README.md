@@ -23,27 +23,41 @@ Proyecto de automatización de pruebas para la página web [Sauce Demo](https://
 ### 4. Regresión del flujo completo
 - Validar el flujo completo: login, agregar producto, checkout, resumen y confirmación de orden
 
+## Reportes
+Los reportes de Serenity se generan y publican automáticamente en:
+- [Ver reporte Serenity](https://hernandomolina.github.io/PruebaTecnicaFinexus/)
+
+Incluyen:
+- Dashboard general
+- Desglose por features
+- Screenshots de pasos críticos
+- Métricas de ejecución
+
 ## Pre-requisitos
-- Java 11 o superior
-- Maven 3.6.3 o superior
+- Java 17 o superior
+- Maven 3.8.x o superior
 - Google Chrome (última versión)
 - Conexión a Internet
 
 ## Estructura del Proyecto
 ```
-src/
-├── main/java/com/pruebatecnicaqa/
-│   ├── tasks/           # Tareas del patrón Screenplay
-│   ├── questions/       # Preguntas para validaciones
-│   ├── userinterfaces/  # Page Objects y localizadores
-│   ├── interactions/    # Interacciones personalizadas
-│   └── utils/          # Utilidades y helpers
-└── test/
-    ├── java/com/pruebatecnicaqa/
-    │   ├── runners/     # Runners de Cucumber
-    │   └── stepdefinitions/  # Definiciones de pasos
-    └── resources/
-        └── features/    # Archivos .feature
+PruebaTecnicaFinexus/
+├── src/
+│   ├── main/java/com/pruebatecnicaqa/
+│   │   ├── tasks/           # Tareas del patrón Screenplay
+│   │   ├── questions/       # Preguntas para validaciones
+│   │   ├── userinterfaces/  # Page Objects y localizadores
+│   │   ├── utils/           # Utilidades y helpers
+│   └── test/java/com/pruebatecnicaqa/
+│       ├── runners/         # Runners de Cucumber
+│       └── stepdefinitions/ # Definiciones de pasos
+│   └── test/resources/features/ # Archivos .feature
+├── .github/workflows/       # Configuración de CI/CD (GitHub Actions)
+├── serenity.properties      # Configuración local de Serenity
+├── serenity-ci.properties   # Configuración para CI/CD
+├── pom.xml                  # Dependencias y configuración Maven
+├── README.md
+└── .gitignore
 ```
 
 ## Instalación y Ejecución
@@ -79,24 +93,6 @@ El proyecto incluye configuración de CI/CD con GitHub Actions que se ejecuta au
 
 ### Reportes en CI/CD
 Los reportes de Serenity se publican automáticamente en GitHub Pages después de cada ejecución exitosa del pipeline.
-
-## Reportes
-Los reportes de Serenity se generan en:
-- `target/site/serenity/index.html`
-
-Incluyen:
-- Dashboard general
-- Desglose por features
-- Screenshots de pasos críticos
-- Métricas de ejecución
-
-## Configuración
-### serenity.properties
-```properties
-webdriver.driver=chrome
-serenity.project.name=Prueba Tecnica QA
-serenity.take.screenshots=AFTER_EACH_STEP
-```
 
 ## Dependencias Principales
 - Serenity BDD Core: 3.9.8
