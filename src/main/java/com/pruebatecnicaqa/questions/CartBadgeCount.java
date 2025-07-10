@@ -5,7 +5,6 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
-import net.serenitybdd.screenplay.targets.Target;
 
 import static com.pruebatecnicaqa.userinterfaces.ProductsPage.SHOPPING_CART_BADGE;
 

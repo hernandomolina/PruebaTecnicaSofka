@@ -2,7 +2,6 @@ package com.pruebatecnicaqa.questions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-import net.serenitybdd.screenplay.questions.Text;
 import static com.pruebatecnicaqa.userinterfaces.CheckoutCompletePage.COMPLETE_HEADER;
 
 public class CheckoutConfirmationMessage implements Question<Boolean> {
