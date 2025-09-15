@@ -25,7 +25,7 @@ Proyecto de automatización de pruebas para la página web [Sauce Demo](https://
 
 ## Reportes
 Los reportes de Serenity se generan y publican automáticamente en:
-- [Ver reporte Serenity](https://hernandomolina.github.io/PruebaTecnicaFinexus/)
+- [Ver reporte Serenity]https://hernandomolina.github.io/PruebaTecnicaSofka/
 
 Incluyen:
 - Dashboard general
@@ -41,7 +41,7 @@ Incluyen:
 
 ## Estructura del Proyecto
 ```
-PruebaTecnicaFinexus/
+PruebaTecnicaSofka/
 ├── src/
 │   ├── main/java/com/pruebatecnicaqa/
 │   │   ├── tasks/           # Tareas del patrón Screenplay
