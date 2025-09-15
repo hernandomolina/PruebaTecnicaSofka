@@ -1,4 +1,4 @@
-# Prueba Técnica QA - Finexus
+# Prueba Técnica QA
 
 ## Descripción del Proyecto
 Proyecto de automatización de pruebas para la página web [Sauce Demo](https://www.saucedemo.com/) implementando:

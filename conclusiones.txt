@@ -1,0 +1,35 @@
+CONCLUSIONES DEL PROYECTO PARA SOFKA
+
+1. Correctitud de la Automatización
+   - Los escenarios implementados (login, carrito, checkout y regresión completa) fueron validados exitosamente con el framework Serenity BDD bajo el patrón Screenplay.
+   - El uso de Cucumber permitió expresar los casos de prueba en un lenguaje entendible para negocio y QA.
+
+2. Funcionalidad Validada
+   - El flujo de login funciona correctamente tanto en casos exitosos como fallidos.
+   - El carrito de compras refleja adecuadamente nombre, precio y total de productos.
+   - El checkout valida campos obligatorios y permite finalizar la compra al completar los datos requeridos.
+   - La regresión asegura la integridad del flujo end-to-end.
+
+3. Integración Continua (CI/CD)
+   - Se configuró GitHub Actions para ejecutar las pruebas automáticamente en cada push o pull request.
+   - Los reportes de Serenity se publican en GitHub Pages, lo cual facilita el acceso a los resultados de las pruebas sin necesidad de ejecutar localmente.
+
+4. Reportes
+   - Serenity genera reportes visuales con:
+     * Dashboard general de ejecución.
+     * Desglose de escenarios por feature.
+     * Evidencias gráficas (screenshots) en pasos clave.
+     * Métricas que permiten analizar calidad y estabilidad del sistema bajo prueba.
+
+5. Hallazgos Relevantes
+   - Al tratarse de un entorno de pruebas sobre la aplicación Sauce Demo, los datos creados no son persistentes.
+   - A pesar de ello, el flujo automatizado demuestra consistencia y validez en la verificación de requisitos funcionales.
+
+6. Tecnologías y Buenas Prácticas
+   - Java 17, Maven, Selenium y Serenity BDD permiten una base sólida para escalar el framework.
+   - Se aplicó el patrón Screenplay, que mejora la mantenibilidad y legibilidad del código.
+   - El uso de esperas explícitas y screenshots incrementa la robustez de las pruebas.
+   - La integración con CI/CD asegura trazabilidad y ejecución continua.
+
+Conclusión Final:
+El proyecto cumple con el objetivo de demostrar capacidades técnicas en automatización de pruebas con Serenity BDD y Screenplay, aplicando buenas prácticas de QA e integrándose exitosamente con un pipeline de CI/CD en GitHub Actions. La solución es mantenible, escalable y fácilmente integrable en un flujo de calidad de software real.
