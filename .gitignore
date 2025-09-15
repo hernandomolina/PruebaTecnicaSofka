@@ -28,7 +28,7 @@ Thumbs.db
 *.log
 logs/
 
-# Serenity reports (opcional - puedes querer incluirlos en CI)
+# Serenity reports (opcional - si puedes querer incluirlos en CI)
 # target/site/serenity/
 
 # Chrome driver

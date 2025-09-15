@@ -1,5 +1,5 @@
 # language: en
-Feature: Carrito de compras en Sauce Demo
+Feature: Carrito de compras en Sauce Demo qa
 
   Como usuario de Sauce Demo
   Quiero poder agregar productos al carrito y validar su contenido

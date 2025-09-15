@@ -19,7 +19,7 @@
     </properties>
 
     <dependencies>
-        <!-- Serenity Dependencies -->
+        <!-- Serenity Dependencies totally -->
         <dependency>
             <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-core</artifactId>
